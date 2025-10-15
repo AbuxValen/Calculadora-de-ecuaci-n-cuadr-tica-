@@ -1,0 +1,102 @@
+:root {
+    --color-principal: #648872; 
+    --color-fondo: #94C7B4; 
+    --color-texto: #000000;
+    --color-borde: #80D9B1;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    background-color: #d5f1d3;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: var();
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #000000;
+    margin-bottom: 30px;
+    font-size: 1em;
+}
+
+.input-grupo {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-grupo label {
+    display: block;
+    font-weight: 700;
+    color: var(--color-texto);
+    margin-bottom: 8px;
+    text-align: center; 
+}
+
+.input-grupo input[type="number"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var();
+    border-radius: 4px;
+    font-size: 1.1em;
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.input-grupo input[type="number"]:focus {
+    border-color: var(--color-principal);
+    outline: none;
+}
+
+/* Botón de Cálculo */
+button {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffffff; /* Un azul un poco más oscuro */
+}
+
+/* Sección de Resultado */
+.resultado-texto {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: var(--color-texto);
+    font-size: 1.1em;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.resultado-error {
+    color: #30253E !important; /* Rojo para errores */
+}

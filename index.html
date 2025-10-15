@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ecuación Cuadrática</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Calculadora de Ecuación Cuadrática</h1>
+        <p>Ingrese los valores de a, b y c de la ecuación </p>
+
+        <div class="input-grupo">
+            <label for="a">Valor de a:</label>
+            <input type="number" id="a" value="1">
+        </div>
+
+        <div class="input-grupo">
+            <label for="b">Valor de b:</label>
+            <input type="number" id="b" value="-5">
+        </div>
+
+        <div class="input-grupo">
+            <label for="c">Valor de c:</label>
+            <input type="number" id="c" value="6">
+        </div>
+
+        <button onclick="calcular()">Calcular Raíces y Graficar</button>
+
+        <div id="resultado" class="resultado-texto">
+            Las raíces son reales y distintas: $\text{x}_1 = 3.00, \text{x}_2 = 2.00$
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
